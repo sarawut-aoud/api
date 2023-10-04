@@ -13,6 +13,6 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+$router->get('/getactivity', 'Activity@getactivity');
+$router->get('/getemp', 'Activity@getemp');
+$router->put('/update', 'Activity@update');
